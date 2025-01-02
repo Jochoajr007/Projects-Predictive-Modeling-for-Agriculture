@@ -46,3 +46,59 @@ for feature in ["N", "P", "K", "ph"]:
 # Store in best_predictive_feature dictionary
 best_predictive_feature = {"K": feature_performance["K"]}
 best_predictive_feature
+
+
+
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 2200 entries, 0 to 2199
+Data columns (total 5 columns):
+ #   Column  Non-Null Count  Dtype  
+---  ------  --------------  -----  
+ 0   N       2200 non-null   int64  
+ 1   P       2200 non-null   int64  
+ 2   K       2200 non-null   int64  
+ 3   ph      2200 non-null   float64
+ 4   crop    2200 non-null   object 
+dtypes: float64(1), int64(3), object(1)
+memory usage: 86.1+ KB
+F1-score for N: 0.10507916708090527
+F1-score for P: 0.10457380486654515
+F1-score for K: 0.2007873036107074
+F1-score for ph: 0.04532731061152114
+
+
+
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 2200 entries, 0 to 2199
+Data columns (total 21 columns):
+ #   Column       Non-Null Count  Dtype
+---  ------       --------------  -----
+ 0   banana       2200 non-null   uint8
+ 1   blackgram    2200 non-null   uint8
+ 2   chickpea     2200 non-null   uint8
+ 3   coconut      2200 non-null   uint8
+ 4   coffee       2200 non-null   uint8
+ 5   cotton       2200 non-null   uint8
+ 6   grapes       2200 non-null   uint8
+ 7   jute         2200 non-null   uint8
+ 8   kidneybeans  2200 non-null   uint8
+ 9   lentil       2200 non-null   uint8
+ 10  maize        2200 non-null   uint8
+ 11  mango        2200 non-null   uint8
+ 12  mothbeans    2200 non-null   uint8
+ 13  mungbean     2200 non-null   uint8
+ 14  muskmelon    2200 non-null   uint8
+ 15  orange       2200 non-null   uint8
+ 16  papaya       2200 non-null   uint8
+ 17  pigeonpeas   2200 non-null   uint8
+ 18  pomegranate  2200 non-null   uint8
+ 19  rice         2200 non-null   uint8
+ 20  watermelon   2200 non-null   uint8
+dtypes: uint8(21)
+memory usage: 45.2 KB
+0.558010495235685
+F1-score for N: 0.09149868209906838
+F1-score for P: 0.14761942909728204
+F1-score for K: 0.23896974566001802
+F1-score for ph: 0.04532731061152114
+{'K': 0.23896974566001802}
